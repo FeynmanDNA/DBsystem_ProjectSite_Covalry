@@ -8,16 +8,26 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'NUS-DBsystem', // Usually your GitHub org/user name.
   projectName: 'covalry', // Usually your repo name.
+  // For Docusaurus' default theme classic,
+  // we use themeConfig to customize your navbar and footer links
   themeConfig: {
     navbar: {
       title: 'Covalry',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Project-Covalry-Logo',
+        src: 'img/covalry_logo.jpg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'docs/doc1',
+          label: 'Docs',
+          position: 'left'
+        },
+        {
+          to: 'blog',
+          label: 'Blog',
+          position: 'left'
+        },
         {
           href: 'https://github.com/covalry',
           label: 'GitHub',
@@ -25,6 +35,7 @@ module.exports = {
         },
       ],
     },
+    disableDarkMode: true,
     footer: {
       style: 'dark',
       links: [
@@ -72,7 +83,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} NUS DBsystem.`,
     },
   },
   presets: [
